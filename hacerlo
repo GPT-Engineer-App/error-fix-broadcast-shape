@@ -1,0 +1,8 @@
+# Suponiendo que 'scaler' fue ajustado con un arreglo de forma (n_samples, 7)
+# y 'trainY' es el resultado de transformar esos datos.
+
+# Si 'trainY' es un arreglo con forma (21471, 7) después de la transformación:
+trainYTrue = scaler.inverse_transform(trainY)
+
+# Si solo tienes una columna de 'trainY' y necesitas usar el escalador que fue ajustado con 7 columnas:
+# Debes reconstruir el arreglo completo con todas las columnas, o ajustar un nuevo escalador para la única columna.
